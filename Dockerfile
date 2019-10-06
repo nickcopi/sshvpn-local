@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN apt-get update && apt-get -y install ssh && apt-get install net-tools
+RUN apt-get update && apt-get -y install ssh && apt-get -y install net-tools
 
 RUN mkdir /root/.ssh
 
