@@ -1,5 +1,10 @@
 #!/bin/bash
 ./tunmake.sh
+## TODO
+## determine the external ip of the container
+## pass it to the other container
+## the other container adds a static route 
+## ip route add $PUBLIC_IP/32 via 172.17.0.1 dev eth0
 ssh -o "StrictHostKeyChecking no" -w 1:1 -i /root/.ssh/key.pem root@$TARGET_HOST -p $TARGET_PORT '/app/connected.sh' &
 sleep 5
 ifconfig tun1 up
