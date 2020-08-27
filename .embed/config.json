@@ -1,0 +1,6 @@
+{
+	"name":"SSH Coyote Local",
+	"tags":["Cyber","Tools"],
+	"description":"Docker container to run on a host in a secure network that allows ssh out to connect to an SSH Coyote Cloud instance and allow traffic into the network.",
+	"date":"June 2019"
+}
